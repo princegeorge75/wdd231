@@ -1,0 +1,208 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/* Global Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    color: #ecf0f3;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #0b5791; 
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #0056b3;
+    color: white;
+}
+
+nav #nav1 img {
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    
+}
+
+#nav1  {
+    display: flex;
+    padding: 5px;
+    margin: 2px;
+    font-size: 1.2em;
+
+}
+
+h1 {
+    padding-left: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+}
+
+nav ul li {
+    margin-left: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #003d80;
+    color: #ccc;
+    border-radius: 5px;
+}
+
+/* Hamburger for Small Screens */
+#hamburger {
+    display: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+#hamburger:before {
+    content: '\2630'; /* Unicode for Hamburger Icon */
+    font-size: 2em;
+    color: white;
+}
+
+/* Flex Navigation for Small Screens */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #0056b3;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 10px;
+    }
+
+    nav ul.open {
+        display: flex;
+        padding: 10px;
+    }
+
+    #hamburger {
+        display: block;
+    }
+}
+
+#course-work {
+    background-color: #c7c2c2;
+    display: block;
+    text-align: center;
+}
+
+#location {
+    background-color: #c7c2c2;
+    display: block;
+    text-align: center;
+}
+
+#wdd{
+    background-color: #c7c2c2;
+    display: block;
+    text-align: center;
+}
+/* Course Cards Styling */
+.course-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.course-card {
+    flex: 1 1 calc(33.33% - 20px);
+    margin: 10px;
+    padding: 15px;
+    background-color: #5a9b6a;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .course-card {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .course-card {
+        flex: 1 1 100%;
+    }
+}
+
+/* Main Layout */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+section {
+    flex: 1 1 45%;
+    margin: 10px;
+    border: 2px solid #ada3a3;
+    padding: 5px;
+}
+
+@media (max-width: 600px) {
+    section {
+        flex: 1 1 100%;
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0056b3;
+    color: white;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Hover effects for wayfinding */
+a:hover {
+    color: #ffcc00;
+    border-bottom: 2px solid #ffcc00;
+}
+
+nav ul a {
+    color: #ecf0f3;
+    padding: 20px;
+    text-decoration: none;
+}
+

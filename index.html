@@ -4,11 +4,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Chamber of Commerce Site Project - Web Development">
+    <meta name="author" content="Prince George Ndiwalana">
+    <title>Chamber of Commerce Site</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js" defer></script>
 </head>
 
 <body>
+    <!-- Header Section -->
+    <header>
+        <!-- Navigation Menu -->
+        <nav id="nav">
+            <div id="nav1">
+                <img src="images/Me2.jpg" alt="Prince George Ndiwalana">
+                <h1>Prince George Ndiwalana</h1>
+            </div>
+            <div id="nav-header">
+                <button id="hamburger" aria-label="Toggle navigation"></button>
+            </div>
+            <ul>
+                <a href="#">Home</a>
+                <a href="#">Chamber</a>
+                <a href="https://github.com/princegeorge75/">GitHub Profile</a>
+                <a href="#">LinkedIn</a>
+            </ul>           
+        </nav>
+    </header>
 
+    <!-- Main Content -->
+    <main>
+        <!-- Section 1: Course Work -->
+        <section id="course-work">
+            <h2>Course Work</h2>
+            <ul>
+                <li>Project 1</li>
+                <li>Project 2</li>
+                <li>Project 3</li>
+            </ul>
+        </section>
+
+        <!-- Section 2: Location -->
+        <section id="location">
+            <h2>Location</h2>
+            <p>I live in a small country found in Eastern Africa known as Uganda, also known as "The Pearl of Africa." It is a country to a lot beauties and nature, including the source of the world's well-known River Nile.</p>
+            <figure><img src="images/kampala.jpeg" alt="An aerial view of Kampala city, Uganda." />
+            <figcaption>A Distant Aerial View of Kampala, the Capital City of Uganda</figcaption>
+            </figure>
+            </section>
+
+        <!-- Section 3: Web and Computer Programming Certificate -->
+        <section id="wdd">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="cse">CSE</button>
+                <button class="filter-btn" data-filter="wdd">WDD</button>
+            </div>
+
+            <div class="course-cards">
+                <div class="course-card cse">CSE 110</div>
+                <div class="course-card wdd">WDD 130</div>
+                <div class="course-card wdd">WDD 231</div>
+                <!-- Add more cards as needed -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span>|Prince George Ndiwalana|.
+        </p>
+        <p id="lastModified">Last Modified: </p>
+    </footer>
 </body>
 
 </html>
