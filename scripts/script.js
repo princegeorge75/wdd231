@@ -1,6 +1,11 @@
 // Toggle the navigation menu for small screens
 document.getElementById('hamburger').addEventListener('click', function () {
-    document.querySelector('nav ul').classList.toggle('open');
+document.querySelector('#animate_me').classList.toggle('open');
+
+hamburgerElement.addEventListener('click', () =>{
+    navElement.classList.toggle("open");
+    hamburgerElement.classList.toggle("open")
+})
 });
 
 // Set the current year in the footer

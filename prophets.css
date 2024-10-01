@@ -1,0 +1,72 @@
+/* General reset and base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  body {
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+  }
+  
+  /* Container for the cards */
+  #cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Individual card styling */
+  #cards section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  #cards section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Full name styling */
+  #cards section h2 {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 15px 0;
+    color: #333;
+  }
+  
+  /* Prophet image styling */
+  #cards section img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 4px solid #ff8c00;
+  }
+  
+  /* Paragraph styling for DOB and POB */
+  #cards section p {
+    text-align: center;
+    margin: 10px 0;
+    color: #555; /* Slightly lighter color for the text */
+    font-size: 1em; /* Adjust the font size */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    #cards {
+      grid-template-columns: 1fr;
+    }
+  
+    #cards section {
+      margin: 10px 0;
+    }
+  }
+  

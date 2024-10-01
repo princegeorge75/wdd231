@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Chamber of Commerce Site Project - Web Development">
     <meta name="author" content="Prince George Ndiwalana">
+    <meta property="og:title" content="Chamber of Commerce Site">
+    <meta property="og:url" content="http://127.0.0.1:5500/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.google.com/imgres?q=Kampala&imgurl=https%3A%2F%2Fwww.safarisrwandasafari.com%2Fwp-content%2Fuploads%2F2020%2F01%2FKampala-1.jpg&imgrefurl=https%3A%2F%2Fwww.safarisrwandasafari.com%2Finformation%2Fkampala-city%2F&docid=UArrhrskyh3LtM&tbnid=giB4OW4o_A9pPM&vet=12ahUKEwimpc6MmeyIAxWk0AIHHeebKf0QM3oECB0QAA..i&w=703&h=422&hcb=2&ved=2ahUKEwimpc6MmeyIAxWk0AIHHeebKf0QM3oECB0QAA">
     <title>Chamber of Commerce Site</title>
     <link rel="stylesheet" href="styles/style.css">
     <script src="scripts/script.js" defer></script>
@@ -14,23 +18,19 @@
 <body>
     <!-- Header Section -->
     <header>
+        <img src="images/Me2.jpg" alt="Prince George Ndiwalana">
+        <h1>Prince George Ndiwalana</h1>
+        <button id="hamburger"></button>
+    </header>      
         <!-- Navigation Menu -->
-        <nav id="nav">
-            <div id="nav1">
-                <img src="images/Me2.jpg" alt="Prince George Ndiwalana">
-                <h1>Prince George Ndiwalana</h1>
-            </div>
-            <div id="nav-header">
-                <button id="hamburger" aria-label="Toggle navigation"></button>
-            </div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Chamber</a></li>
-                <li><a href="https://github.com/princegeorge75/">GitHub Profile</a></li>
-                <li><a href="#">LinkedIn</a></li>
-            </ul>           
-        </nav>
-    </header>
+    <nav id="animate_me">   
+        <ul class="menuLinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="https://github.com/princegeorge75/">GitHub Profile</a></li>
+            <li><a href="#">LinkedIn</a></li>
+        </ul>                     
+    </nav>
 
     <!-- Main Content -->
     <main>
@@ -66,6 +66,7 @@
                 <div class="course-card cse">CSE 110</div>
                 <div class="course-card wdd">WDD 130</div>
                 <div class="course-card wdd">WDD 231</div>
+                <div class="course-card cse">CSE 231</div>
                 <!-- Add more cards as needed -->
             </div>
         </section>
@@ -79,5 +80,4 @@
         <p id="lastModified">Last Modified: </p>
     </footer>
 </body>
-
 </html>
