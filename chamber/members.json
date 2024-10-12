@@ -1,0 +1,164 @@
+{
+    "members": [
+        {
+            "business": "Ashley Furniture Homestore",
+            "address": {
+                "street": "10349 Fairway Dr",
+                "city": "Roseville",
+                "state": "CA",
+                "zip": "95678"
+            },
+            "phone": "9169535757",
+            "email": "info@ashleyfurniture.com",
+            "website": "https://www.ashleyfurniture.com/",
+            "logo": {
+                "url": "https://www.ashleyfurniture.com/on/demandware.static/-/Library-Sites-AshcommSharedLibrary/default/dw07126b7a/images/global/Ashley-Logo-Horizontal.svg",
+                "width": "250",
+                "height": "100"
+            },
+            "membership": "gold",
+            "category": "Shopping",
+            "advertisement": "Get an Extra 10% off purchases if you are a Chamber Member"
+        },
+        {
+            "business": "Bounty Hunters Grind & Grill",
+            "address": {
+                "street": "406 Vernon St",
+                "city": "Roseville",
+                "state": "CA",
+                "zip": "95678"
+            },
+            "phone": "9167720406",
+            "email": "order@bountyhuntersroseville.com",
+            "website": "https://www.bountyhunterscafe.com/",
+            "logo": {
+                "url": "https://static.wixstatic.com/media/d996e1_6b71d5e8a01e405cb15a61bf405a5927~mv2.jpg/v1/crop/x_438,y_1111,w_3216,h_1833/fill/w_299,h_178,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/d996e1_6b71d5e8a01e405cb15a61bf405a5927~mv2.jpg",
+                "width": "150",
+                "height": "100"
+            },
+            "membership": "silver",
+            "category": "Restaurant",
+            "advertisement": "Dessert is on us Monday nights! Have dinner and save room for sweets! One free dessert for each purchased dinner after 5pm."
+        },
+        {
+            "business": "Byers Gymnastics Center",
+            "address": {
+                "street": "2009 Opportunity Dr",
+                "city": "Roseville",
+                "state": "CA",
+                "zip": "95678"
+            },
+            "phone": "9167812939",
+            "email": "info@byersroseville.com",
+            "website": "https://byersgym.com/",
+            "logo": {
+                "url": "https://byersgym.com/wp-content/uploads/2019/11/cropped-Byers-Gymnastics-Center-Logo-1.png",
+                "width": "93",
+                "height": "100"
+            },
+            "membership": "silver",
+            "category": "Sports & Recreation",
+            "advertisement": "One free practice session. Call us to schedule with one of our amazing instructors."
+        },
+        {
+            "business": "Costa Vida Fresh Mexican Grill",
+            "address": {
+                "street": "1475 Eureka Rd STE 100",
+                "city": "Roseville",
+                "state": "CA",
+                "zip": "95661"
+            },
+            "phone": "9167739283",
+            "email": "togo@costavida.com",
+            "website": "https://www.costavida.com/",
+            "logo": {
+                "url": "https://www.costavida.com/wp-content/uploads/2023/03/logo-costa-vida.svg",
+                "width": "250",
+                "height": "100"
+            },
+            "membership": "gold",
+            "category": "Restaurant",
+            "advertisement": "Kids eat free Tuesdays all summer long. With the purchase of one adult meal, get one kid's meal free. Available for kids 10 and under."
+        },
+        {
+            "business": "Denio's Roseville Farmers Market",
+            "address": {
+                "street": "2013 Opportunity Dr STE 140",
+                "city": "Roseville",
+                "state": "CA",
+                "zip": "95678"
+            },
+            "phone": "9167822704",
+            "email": "info@deniosmarket.com",
+            "website": "https://deniosmarket.com/",
+            "logo": {
+                "url": "http://deniosmarket.com/wp-content/uploads/denios_logo_resized.png",
+                "width": "125",
+                "height": "100"
+            },
+            "membership": "bronze",
+            "category": "Shopping",
+            "advertisement": ""
+        },
+        {
+            "business": "Landscape & Tree Company",
+            "address": {
+                "street": "9340 Viking Place",
+                "city": "Roseville",
+                "state": "CA",
+                "zip": "95747"
+            },
+            "phone": "9162469987",
+            "email": "contact@landscapetreeco.com",
+            "website": "https://landscapetreeco.com/",
+            "logo": {
+                "url": "https://res.cloudinary.com/micronetonline/image/upload/c_crop,h_200,w_427,x_0,y_0/f_auto/q_auto:best/v1704755066/tenants/d63d369f-bc86-4c8e-b547-5545e12c7029/6cade229dea64a84b9c2837aa2b82f61/landscape.png",
+                "width": "180",
+                "height": "100"
+            },
+            "membership": "silver",
+            "category": "Home Improvement",
+            "advertisement": "It's time to freshen up your landscape.  Call or email us for a free consultation. Keep your yard looking great all year round!  Chamber members get an extra 15% Off."
+        },
+        {
+            "business": "Secure and Alert Systems Corp",
+            "address": {
+                "street": "1328 Blue Oaks Blvd",
+                "city": "Roseville",
+                "state": "CA",
+                "zip": "95678"
+            },
+            "phone": "9166756330",
+            "email": "info@secureandalert.com",
+            "website": "https://www.secureandalert.com/",
+            "logo": {
+                "url": "https://www.secureandalert.com/wp-content/uploads/2022/03/logo-v3.svg",
+                "width": "250",
+                "height": "100"
+            },
+            "membership": "gold",
+            "category": "Home Improvement",
+            "advertisement": "What goes on when you're not home? Need cameras or alarm security? Schedule a free consultation. Chamber members get an extra 15% discount."
+        },
+        {
+            "business": "Steve Wallen Swim School",
+            "address": {
+                "street": "10608 Industrial Ave STE 150",
+                "city": "Roseville",
+                "state": "CA",
+                "zip": "95691"
+            },
+            "phone": "9167947977",
+            "email": "roseville@wallenswim.com",
+            "website": "https://wallenswim.com/locations/roseville/",
+            "logo": {
+                "url": "https://wallenswim.com/wp-content/uploads/2018/02/Wallen_Swim_School_Logo_01.png",
+                "width": "275",
+                "height": "75"
+            },
+            "membership": "bronze",
+            "category": "Sports & Recreation",
+            "advertisement": ""
+        }
+    ]
+}
