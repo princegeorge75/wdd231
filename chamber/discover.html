@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover - Kampala Chamber of Commerce</title>
+    <meta name="description" content="Discover page for the City of Kampala Chamber of Commerce">
+    <meta name="author" content="Prince George Ndiwalana">
+    <!--Social Media Content-->
+    <meta property="og:title" content="WDD231 Chamber of Commerce Project">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_7964838/Image/News/CivicCenter770x540.jpg">
+    <meta property="og:url" content="https://princegeorge75.github.io/wdd230/chamber/index.html">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&family=Ysabeau+Infant:ital,wght@0,600;1,800&display=swap"
+        rel="stylesheet">
+    <!--CSS styles-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+    <!--Icons-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1>Kampala <br>Chamber of Commerce</h1>
+    </header>
+    <button aria-label="menu" id="menu"></button>
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a class="active" href="#">Discover</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html">Join</a>
+    </nav>
+
+    <main id="discover-main">
+        <aside>
+            <p class="visits"></p>
+            <section>
+                <h3>What to Know!</h3>
+                <p>Population: 148,879</p>
+                <p>Elevation: 16,763 ft (5109 m)</p>
+                <p>Incorporated: April 10, 1909</p>
+            </section>
+            <section>
+                <h3>Historical Landmarks</h3>
+                <ul>
+                    <li>Independence Monument</li>
+                    <li>The Railway Museum</li>
+                    <li>Mt. Rwenzori</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Family Entertainment</h3>
+                <ul>
+                    <li>The Rolex</li>
+                    <li>Lake Bunyonyi</li>
+                    <li>FoodHUb</li>
+                    <li>Taxi Park</li>
+                </ul>
+            </section>
+        </aside>
+        <div class="discover-pics">
+            <div>
+                <img src="images/independence.webp" alt="The 1962 Independence Monument" loading="lazy" width="600" height="645">
+                <p class="caption">The 1962 Independence Monument/p>
+            </div>
+            <div>
+                <img src="images/railway.webp" alt="Railway Museum" loading="lazy" width="600" height="375">
+                <p class="caption">Railway Museum</p>
+            </div>
+            <div>
+                <img src="images/equator.webp" alt="The equator monument" loading="lazy" width="600"
+                    height="375">
+                <p class="caption">The Equator Monument</p>
+            </div>
+            <div>
+                <img src="images/rolex.webp" alt="A Ugandan Rolex" loading="lazy" width="600" height="375">
+                <p class="caption">The Ugandan Rolex</p>
+            </div>
+            <div>
+                <img src="images/express.webp" alt="The Entebbe Express Highway" loading="lazy" width="600" height="375">
+                <p class="caption">The Entebbe Express Highway; Africa's most expensive highway in terms of cost</p>
+            </div>
+            <div>
+                <img src="images/rwenzori.webp" alt="Margerita, the highest peak of Mt. Rwenzori" loading="lazy" width="600" height="375">
+                <p class="caption">Margerita, the highest peak of Mt. Rwenzori</p>
+            </div>
+            <div>
+                <img src="images/taxi-park.webp" alt="the crazy taxi park" loading="lazy" width="600" height="282">
+                <p class="caption">The crazy taxi park</p>
+            </div>
+            <div>
+                <img src="images/bunyonyi.webp" alt="Lake Bunyonyi and its children islands" loading="lazy" width="600" height="375">
+                <p class="caption">Lake Bunyonyi and its children islands</p>
+            </div>
+            <div>
+                <img src="images/pizza.webp" alt="Incredible FoodHub pizza" loading="lazy" width="600" height="375">
+                <p class="caption">Incredible FoodHub Pizza</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>
+            <span>Prince George</span> &bull;
+            <span>Project for WDD231 Class</span>
+        </p>
+        <p id="contact">074-334-7304 <br> princegeorgexyx@gmail.com </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/visits.js" defer></script>
+</body>
+
+</html>

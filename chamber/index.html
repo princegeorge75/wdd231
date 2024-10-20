@@ -4,80 +4,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chamber of Commerce Site Project - Web Development">
+    <title>Home - Kampala Chamber of Commerce</title>
+    <meta name="description" content="Home page for the City of Kampala Chamber of Commerce">
     <meta name="author" content="Prince George Ndiwalana">
-    <meta property="og:title" content="Chamber of Commerce Site">
-    <meta property="og:url" content="http://127.0.0.1:5500/index.html">
+    <!--Social Media Content-->
+    <meta property="og:title" content="WDD231 Chamber of Commerce Project">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://www.google.com/imgres?q=Kampala&imgurl=https%3A%2F%2Fwww.safarisrwandasafari.com%2Fwp-content%2Fuploads%2F2020%2F01%2FKampala-1.jpg&imgrefurl=https%3A%2F%2Fwww.safarisrwandasafari.com%2Finformation%2Fkampala-city%2F&docid=UArrhrskyh3LtM&tbnid=giB4OW4o_A9pPM&vet=12ahUKEwimpc6MmeyIAxWk0AIHHeebKf0QM3oECB0QAA..i&w=703&h=422&hcb=2&ved=2ahUKEwimpc6MmeyIAxWk0AIHHeebKf0QM3oECB0QAA">
-    <title>Chamber of Commerce Site</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <script src="scripts/script.js" defer></script>
+    <meta property="og:image"
+        content="https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_7964838/Image/News/CivicCenter770x540.jpg">
+    <meta property="og:url" content="https://princegeorge75.github.io/wdd231/chamber/index.html">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&family=Ysabeau+Infant:ital,wght@0,600;1,800&display=swap"
+        rel="stylesheet">
+    <!--CSS styles-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+    <!--Icons-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <!-- Header Section -->
     <header>
-        <img src="images/Me2.jpg" alt="Prince George Ndiwalana">
-        <h1>Prince George Ndiwalana</h1>
-        <button id="hamburger"></button>
-    </header>      
-        <!-- Navigation Menu -->
-    <nav id="animate_me">   
-        <ul class="menuLinks">
-            <li><a href="#">Home</a></li>
-            <li><a href="https://github.com/princegeorge75/Chamber">Chamber</a></li>
-            <li><a href="https://github.com/princegeorge75/">GitHub Profile</a></li>
-            <li><a href="#">LinkedIn</a></li>
-        </ul>                     
+        <h1>Kampala <br>Chamber of Commerce</h1>
+    </header>
+    <button aria-label="menu" id="menu"></button>
+    <nav class="nav">
+        <a class="active" href="index.html">Home</a>
+        <a href="discover.html">Discover</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html">Join</a>
     </nav>
-
-    <!-- Main Content -->
     <main>
-        <!-- Section 1: Course Work -->
-        <section id="course-work">
-            <h2>Course Work</h2>
-            <ul>
-                <li>Project 1</li>
-                <li>Project 2</li>
-                <li>Project 3</li>
-            </ul>
+        <div id="banner">
+            <p id="bannerMsg"></p>
+            <button id="closeBanner"></button>
+        </div>
+        <div id="hero">
+            <img src="images/roseville.webp" alt=" Kampala Rose Center with roses">
+        </div>
+        <div class="action">
+            <button aria-label="join" id="join">Become a Member</button>
+        </div>
+        <section class="info">
+            <h2>Community Information</h2>
+            <img src="images/image.webp" alt="event picture" loading="lazy" height="183" width="275">
+            <div>
+                <h3>Event Details</h3>
+                <p>Some specific information about the next upcoming event that includes details that will encourage
+                    people to
+                    participate. It could include ways this will promote business networking and enrich the community.
+                </p>
+            </div>
+            <div class="events">
+                <h3>Upcoming Events</h3>
+                <ul>
+                    <li>5th - Kabaka's Birthday Festival</li>
+                    <li>8th - Street Vendors' Wednesday</li>
+                    <li>9th - Independence Day</li>
+                    <li>10th - Campfire & History</li>
+                    <li>10th - Kigezi Falls Mysteries Tour</li>
+                </ul>
+            </div>
         </section>
-
-        <!-- Section 2: Location -->
-        <section id="location">
-            <h2>Location</h2>
-            <p>I live in a small country found in Eastern Africa known as Uganda, also known as "The Pearl of Africa." It is a country to a lot beauties and nature, including the source of the world's well-known River Nile.</p>
-            <figure><img src="images/kampala.jpeg" alt="An aerial view of Kampala city, Uganda." />
-            <figcaption>A Distant Aerial View of Kampala, the Capital City of Uganda</figcaption>
+        <section class="weather">
+            <h2>Weather</h2>
+            <figure class="current">
+                <h3>Current</h3>
+                <img id="rsvl-weather-icon" src="#" alt="">
+                <span id="rsvl-current-temp"></span>
+                <figcaption></figcaption>
             </figure>
-            </section>
-
-        <!-- Section 3: Web and Computer Programming Certificate -->
-        <section id="wdd">
-            <h2>Web and Computer Programming Certificate</h2>
-            <div class="filter-buttons">
-                <button class="filter-btn" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="cse">CSE</button>
-                <button class="filter-btn" data-filter="wdd">WDD</button>
-            </div>
-
-            <div class="course-cards">
-                <div class="course-card cse">CSE 110</div>
-                <div class="course-card wdd">WDD 130</div>
-                <div class="course-card wdd">WDD 231</div>
-                <div class="course-card cse">CSE 231</div>
-                <!-- Add more cards as needed -->
-            </div>
+        </section>
+        <section class="spotlight">
+            <h2>Spotlight</h2>
         </section>
     </main>
-
-    <!-- Footer -->
     <footer>
         <p>
-            &copy; <span id="currentyear"></span>|Prince George Ndiwalana|.
+            <span>Prince George</span> &bull;
+            <span>Project for WDD231 Class</span>
         </p>
-        <p id="lastModified">Last Modified: </p>
+        <p id="contact">074-334-7304 <br> princegeorgexyx@gmail.com </p>
+        <p id="lastModified"></p>
     </footer>
+    <script src="scripts/getDates.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/banner.js" defer></script>
+    <script src="scripts/action.js" defer></script>
 </body>
+
+
 </html>

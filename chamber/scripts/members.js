@@ -37,33 +37,33 @@ const displayMembers = (members) => {
         business.id = "mem-name";
         address.id = "mem-address";
         street.textContent = member.address.street;
-        
-        // Fixing string interpolation and escaping for compoundCSZ
+
+        // Corrected string interpolation for compoundCSZ
         let compoundCSZ = `${member.address.city}, ${member.address.state} ${member.address.zip}`;
         csz.textContent = compoundCSZ;
 
-        // Fixing the href attribute for phone and email
+        // Corrected href attribute format for phone and email
         phone.setAttribute("href", `tel:${member.phone}`);
         phone.textContent = member.phone.replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2-$3');
         phone.id = "mem-phone";
-        
+
         email.setAttribute("href", `mailto:${member.email}`);
         email.textContent = member.email;
         email.id = "mem-email";
-        
+
         website.setAttribute("href", member.website);
         website.textContent = "Go to website";
         website.id = "mem-web";
 
-        // Fixing string interpolation for membership and category
+        // Corrected string interpolation for membership and category
         membership.textContent = `Membership: ${member.membership}`;
         membership.id = "mem-type";
-        category.textContent = member.category; // No need for interpolation here
+        category.textContent = member.category;  // Removed unnecessary string interpolation
         category.id = "mem-category";
 
         // define logo image attributes
         logo.setAttribute("src", member.logo.url);
-        logo.setAttribute("alt", `Logo for ${member.business}`); // Fixing interpolation for alt text
+        logo.setAttribute("alt", `Logo for ${member.business}`);
         logo.setAttribute("loading", "lazy");
         logo.setAttribute("width", member.logo.width);
         logo.setAttribute("height", member.logo.height);
