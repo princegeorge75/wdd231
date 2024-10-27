@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join - Kampala Chamber of Commerce</title>
+    <meta name="description" content="Join page for the City of Kampala Chamber of Commerce">
+    <meta name="author" content="Prince george Ndiwalana">
+    <!--Social Media Content-->
+    <meta property="og:title" content="WDD231 Chamber of Commerce Project">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_7964838/Image/News/CivicCenter770x540.jpg">
+    <meta property="og:url" content="https://princegeorge75.github.io/wdd230/chamber/index.html">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&family=Ysabeau+Infant:ital,wght@0,600;1,800&display=swap"
+        rel="stylesheet">
+    <!--CSS styles-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+    <!--Icons-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body class="pgJoin">
+    <header>
+        <h1>Kampala <br>Chamber of Commerce</h1>
+    </header>
+    <button aria-label="menu" id="menu"></button>
+    <nav class="nav">
+        <a href="/index.html">Home</a>
+        <a href="discover.html">Discover</a>
+        <a href="directory.html">Directory</a>
+        <a class="active" href="join.html">Join</a>
+    </nav>
+    <main>
+        <h2>Become A Member</h2>
+
+        <aside id="asideJoin">
+            <h3>Benefits</h3>
+            <div>
+                <h4>NP Membership</h4>
+                <p>Available to only non-profit organizations. No cost membership.</p>
+            </div>
+            <div>
+                <h4>Bronze Membership</h4>
+                <p>Includes ribbon cutting ceremony with a 1-day spotlight post and one free networking event ticket.
+                </p>
+            </div>
+            <div>
+                <h4>Silver Membership</h4>
+                <p>Includes ribbon cutting ceremony with a 3-day spotlight post and two free networking event tickets.
+                </p>
+            </div>
+            <div>
+                <h4>Gold Membership</h4>
+                <p>Includes ribbon cutting ceremony with a 1-week spotlight post, two free networking event tickets, and
+                    one free marketing email blast.</p>
+            </div>
+        </aside>
+
+        <form method="get" action="thankyou.html" class="fmJoin">
+            <fieldset>
+                <legend>Primary Contact</legend>
+                <label>First Name* <input type="text" name="fname" id="fname" required></label>
+                <label>Last Name* <input type="text" name="lname" id="lname" required></label>
+                <label>Title or Position <input type="text" name="title" id="title" pattern="[a-zA-Z -]{7,}"
+                        title="Must be at least (7) characters and contain only letters, spaces, and hyphens (-)"></label>
+                <label>Email* <input type="email" name="email" id="email" required
+                        placeholder="example@gmail.com"></label>
+                <label>Mobile Phone Number* <input type="tel" name="phone" id="phone" required
+                        placeholder="9165551234"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Business Information</legend>
+                <label>Business/Organization Name* <input type="text" name="business" id="business" required></label>
+                <label>Business Description <textarea name="desc" id="desc" rows="5"></textarea></label>
+            </fieldset>
+
+            <fieldset id="membership">
+                <legend>Membership Type</legend>
+                <div>Choose Membership Level</div>
+                <label><input type="radio" name="member" id="np" value="np"> NP Membership (non-profit
+                    organizations) <span class="cost"> $0</span></label>
+                <label><input type="radio" name="member" id="bronze" value="bronze"> Bronze Membership <span
+                        class="cost">
+                        $100</span></label>
+                <label><input type="radio" name="member" id="silver" value="silver"> Silver Membership <span
+                        class="cost">
+                        $200</span></label>
+                <label><input type="radio" name="member" id="gold" value="gold"> Gold Membership <span class="cost">
+                        $300</span></label>
+                <label><input type="hidden" name="timestamp" id="timestamp"></label>
+            </fieldset>
+            <input type="submit" value="Apply for Membership">
+        </form>
+    </main>
+    <footer>
+        <p>
+            <span>Prince George</span> &bull;
+            <span>Project for WDD231 Class</span>
+        </p>
+        <p id="contact">074-334-7304 <br> princegeorgexyx@gmail.com </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/members.js" defer></script>
+</body>
+</html>
