@@ -1,0 +1,192 @@
+/* General Mobile Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background-color: #b2d3b2;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: #004400;
+}
+
+header p {
+    color: #fff;
+}
+
+header nav ul {
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0.5rem 0;
+}
+
+
+
+/* Navigation Links */
+nav ul li a {
+    color: #004400; /* Initial text color */
+    background-color: #b2d3b2; /* Initial background color */
+    padding: 10px 15px;
+    text-decoration: none;
+    border: 2px solid #333; /* Solid border around links */
+    transition: all 0.3s ease; /* Smooth transition effect */
+    border-radius: 10px; /* Rounded corners */
+}
+
+nav ul li a:hover {
+    color: #004400; /* Text color on hover */
+    background-color: #fff; /* Background color on hover */
+    border-color: #fff; /* Border color to match hover background */
+}
+
+
+.logo {
+    width: 100px;
+}
+
+/* Main Content */
+main {
+    padding: 1rem;
+}
+
+/* Mobile Styles for the Home Section */
+
+#home {
+    position: relative;
+    background-image: url('images/hero-image.jpg');
+    background-size: cover; /* Ensures the image covers the area */
+    background-position: center; /* Keeps the image centered */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh; /* Adjust based on preferred height */
+    overflow: hidden; /* Prevents content overflow */
+}
+
+#home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay for readability */
+    z-index: 1;
+}
+
+#home h1, #home p {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    max-width: 90%; /* Limit the text width for better readability */
+}
+
+/* Responsive font sizes for smaller screens */
+#home h1 {
+    font-size: 8vw;
+}
+
+#home p {
+    font-size: 4vw;
+}
+
+
+/* About Us Section */
+#about {
+    padding: 40px 20px; /* Add padding to the about section */
+}
+
+.about-container {
+    display: flex; /* Use Flexbox to align children */
+    flex-direction: column; /* Stack the containers vertically */
+    align-items: center; /* Center align the containers */
+}
+
+.about-box {
+    border: 1px solid #ccc; /* Light gray border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Slight shadow */
+    padding: 20px; /* Add some padding inside the boxes */
+    margin: 10px; /* Add margin around the boxes */
+    max-width: 90%; /* Allow boxes to take up most of the screen */
+    border-radius: 10px; /* Rounded edges */
+    text-align: center; /* Center the text */
+}
+
+.about-box h3 {
+    font-weight: bold; /* Bold heading */
+    text-decoration: underline; /* Underline heading */
+    margin-bottom: 10px; /* Add space below the heading */
+}
+
+/* Events Section */
+#events {
+    padding: 40px 20px; /* Add padding to the events section */
+}
+
+.events-container {
+    display: flex;
+    flex-direction: column; /* Stack the containers vertically */
+    align-items: center; /* Center align the containers */
+}
+
+.event-box {
+    border: 1px solid #ccc; /* Light gray border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4); /* Slight shadow */
+    padding: 20px; /* Padding inside the boxes */
+    margin: 10px; /* Margin around the boxes */
+    max-width: 90%; /* Limit width for responsiveness */
+    border-radius: 10px; /* Rounded edges */
+    text-align: center; /* Center-align the text */
+}
+
+.event-box h3 {
+    font-weight: bold; /* Bold heading */
+    text-decoration: underline; /* Underline the heading */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+/* Membership and Contact Section */
+#membership-contact {
+    display: flex;
+    flex-direction: column; /* Stack vertically */
+    align-items: center; /* Center-align the containers */
+    padding: 20px;
+}
+
+.membership-contact-box {
+    border: 1px solid #ccc; /* Visible border */
+    padding: 20px; /* Padding inside the box */
+    margin: 10px; /* Space around each box */
+    width: 90%; /* Allow width to adjust within the mobile view */
+    border-radius: 10px; /* Rounded edges for mobile */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Slight shadow */
+}
+
+.membership-contact-box h2 {
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #004400;
+    color: #fff;
+}

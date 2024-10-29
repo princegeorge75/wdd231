@@ -1,0 +1,26 @@
+#home {
+    background-image: url('images/hero-image.jpg'); /* Replace with the path to your hero image */
+    background-size: cover;
+    background-position: center;
+    color: white; /* Adjust text color for better contrast */
+    text-align: center;
+    padding: 90px; /* Adjust padding as needed */
+    height: 25vh; /* Full viewport height */
+    position: relative; /* Enable positioning context */
+}
+
+#home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black with 50% transparency */
+    z-index: 1; /* Place it below the text */
+}
+
+#home h1, #home p {
+    position: relative; /* Ensure text is above the pseudo-element */
+    z-index: 2; /* Place text above the background overlay */
+}

@@ -1,0 +1,204 @@
+/* General Desktop Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #b2d3b2;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+    background-color: #004400;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-right: 1.5rem;
+}
+
+header nav ul li a {
+    color: #004400;
+    text-decoration: none;
+}
+
+/* Navigation Links */
+nav ul li a {
+    color: #004400; /* Initial text color */
+    background-color: #b2d3b2; /* Initial background color */
+    padding: 10px 15px;
+    text-decoration: none;
+    border: 2px solid #333; /* Solid border around links */
+    transition: all 0.3s ease; /* Smooth transition effect */
+    border-radius: 10px; /* Rounded corners */
+}
+
+nav ul li a:hover {
+    color: #004400; /* Text color on hover */
+    background-color: #fff; /* Background color on hover */
+    border-color: #fff; /* Border color to match hover background */
+}
+
+.logo {
+    width: 120px;
+}
+
+main {
+    padding: 2rem;
+}
+
+/* Desktop Styles for the Home Section */
+
+#home {
+    position: relative;
+    background-image: url('images/hero-image.jpg');
+    background-size: cover; /* Ensures the image covers the area */
+    background-position: center; /* Keeps the image centered */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vh; /* Adjust based on preferred height */
+    overflow: hidden; /* Prevents content overflow */
+}
+
+header p {
+    color: #fff;
+}
+
+#home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Overlay for readability */
+    z-index: 1;
+}
+
+#home h1, #home p {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    max-width: 80%; /* Slightly narrower for desktop */
+}
+
+/* Font sizes for desktop view */
+#home h1 {
+    font-size: 2vw;
+}
+
+#home p {
+    font-size: 1.2vw;
+}
+
+
+#about {
+    padding: 20px 20px; /* Add padding to the about section */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-container {
+    display: flex; /* Flexbox for horizontal alignment */
+    justify-content: space-around; /* Space evenly between containers */
+    flex-wrap: wrap; /* Allows wrapping on smaller desktop screens */
+    width: 100%; /* Full width of the section */
+    max-width: 1200px; /* Limit the width of the container */
+}
+
+.about-box {
+    border: 1px solid #948f8f; /* Light gray border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Slight shadow */
+    padding: 20px; /* Padding inside the boxes */
+    margin: 12px; /* Margin around the boxes */
+    flex: 1; /* Distribute available space evenly */
+    max-width: 300px; /* Limit width for each container */
+    border-radius: 10px; /* Rounded edges */
+    text-align: center; /* Center-align the text */
+}
+
+.about-box h3 {
+    font-weight: bold; /* Bold heading */
+    text-decoration: underline; /* Underline heading */
+    margin-bottom: 10px; /* Add space below the heading */
+}
+
+#events {
+    padding: 20px 20px; /* Padding around the section */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.events-container {
+    display: flex; /* Flexbox for horizontal alignment */
+    justify-content: space-around; /* Space evenly between containers */
+    flex-wrap: wrap; /* Allows wrapping on smaller desktop screens */
+    width: 100%; /* Full width of the section */
+    max-width: 1200px; /* Limit the width of the container */
+}
+
+.event-box {
+    border: 1px solid #948f8f; /* Light gray border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Slight shadow */
+    padding: 20px; /* Padding inside the boxes */
+    margin: 10px; /* Margin around the boxes */
+    flex: 1; /* Distribute available space evenly */
+    max-width: 300px; /* Limit width for each container */
+    border-radius: 10px; /* Rounded edges */
+    text-align: center; /* Center-align the text */
+}
+
+.event-box h3 {
+    font-weight: bold; /* Bold heading */
+    text-decoration: underline; /* Underline heading */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+/* Membership and Contact Section */
+#membership-contact {
+    display: flex; /* Flex layout for horizontal alignment */
+    justify-content: space-between; /* Space between the containers */
+    max-width: 1200px; /* Limit the section's width */
+    margin: 0 auto; /* Center the section horizontally */
+    padding: 20px;
+}
+
+.membership-contact-box {
+    flex: 1; /* Allow each box to take up equal space */
+    border: 1px solid #948f8f; /* Light gray border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Slight shadow */
+    padding: 20px; /* Padding inside the box */
+    margin: 10px; /* Space between the boxes */
+    max-width: 45%; /* Limit width to keep them side by side */
+    border-radius: 5px; /* Slightly rounded edges */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Slight shadow */
+}
+
+.membership-contact-box h2 {
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #004400;
+    color: #fff;
+}
