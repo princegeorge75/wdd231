@@ -1,0 +1,92 @@
+[
+    {
+        "name": "John Doe",
+        "membership": "Gold",
+        "email": "johndoe@example.com",
+        "phone": "555-0101"
+    },
+    {
+        "name": "Jane Smith",
+        "membership": "Silver",
+        "email": "janesmith@example.com",
+        "phone": "555-0102"
+    },
+    {
+        "name": "Emily Johnson",
+        "membership": "Bronze",
+        "email": "emilyjohnson@example.com",
+        "phone": "555-0103"
+    },
+    {
+        "name": "Michael Brown",
+        "membership": "Gold",
+        "email": "michaelbrown@example.com",
+        "phone": "555-0104"
+    },
+    {
+        "name": "Sarah Davis",
+        "membership": "Silver",
+        "email": "sarahdavis@example.com",
+        "phone": "555-0105"
+    },
+    {
+        "name": "David Wilson",
+        "membership": "Bronze",
+        "email": "davidwilson@example.com",
+        "phone": "555-0106"
+    },
+    {
+        "name": "Laura White",
+        "membership": "Gold",
+        "email": "laurawhite@example.com",
+        "phone": "555-0107"
+    },
+    {
+        "name": "Robert Harris",
+        "membership": "Silver",
+        "email": "robertharris@example.com",
+        "phone": "555-0108"
+    },
+    {
+        "name": "Mary Clark",
+        "membership": "Bronze",
+        "email": "maryclark@example.com",
+        "phone": "555-0109"
+    },
+    {
+        "name": "James Lewis",
+        "membership": "Gold",
+        "email": "jameslewis@example.com",
+        "phone": "555-0110"
+    },
+    {
+        "name": "Linda Robinson",
+        "membership": "Silver",
+        "email": "lindarobinson@example.com",
+        "phone": "555-0111"
+    },
+    {
+        "name": "Paul Walker",
+        "membership": "Bronze",
+        "email": "paulwalker@example.com",
+        "phone": "555-0112"
+    },
+    {
+        "name": "Karen Hall",
+        "membership": "Gold",
+        "email": "karenhall@example.com",
+        "phone": "555-0113"
+    },
+    {
+        "name": "Nancy Adams",
+        "membership": "Silver",
+        "email": "nancyadams@example.com",
+        "phone": "555-0114"
+    },
+    {
+        "name": "George Baker",
+        "membership": "Bronze",
+        "email": "georgebaker@example.com",
+        "phone": "555-0115"
+    }
+]

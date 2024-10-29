@@ -47,6 +47,13 @@ nav ul li a:hover {
     border-color: #fff; /* Border color to match hover background */
 }
 
+.active-link {
+    color: #000000; 
+    background-color: #0ef40e;
+    font-weight: bold;
+    border-bottom: 2px solid #5f33ff;
+  }
+
 .logo {
     width: 120px;
 }
@@ -76,6 +83,7 @@ main {
 
 header p {
     color: #fff;
+    font-size: larger;
 }
 
 #home::before {
@@ -170,6 +178,39 @@ header p {
     margin-bottom: 10px; /* Space below the heading */
 }
 
+/* Membership Section */
+#membership {
+    padding: 20px 20px; /* Padding around the section */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.membership-container {
+    display: flex; /* Flexbox for horizontal alignment */
+    justify-content: space-around; /* Space evenly between containers */
+    flex-wrap: wrap; /* Allows wrapping on smaller desktop screens */
+    width: 100%; /* Full width of the section */
+    max-width: 1200px; /* Limit the width of the container */
+}
+.membership-box {
+    border: 1px solid #948f8f; /* Light gray border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Slight shadow */
+    padding: 20px; /* Padding inside the boxes */
+    margin: 10px; /* Margin around the boxes */
+    flex: 1; /* Distribute available space evenly */
+    max-width: 300px; /* Limit width for each container */
+    border-radius: 10px; /* Rounded edges */
+    text-align: center; /* Center-align the text */
+}
+
+.membership-box h3 {
+    font-weight: bold; /* Bold heading */
+    text-decoration: underline; /* Underline the heading */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+
 /* Membership and Contact Section */
 #membership-contact {
     display: flex; /* Flex layout for horizontal alignment */
@@ -201,4 +242,27 @@ footer {
     padding: 1rem;
     background-color: #004400;
     color: #fff;
+}
+
+.member-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
 }

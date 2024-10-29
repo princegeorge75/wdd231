@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Page - Kigo Golfing Club</title>
+    <!--Social Media Content-->
+    <meta property="og:title" content="final-project">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_7964838/Image/News/CivicCenter770x540.jpg">
+    <meta property="og:url" content="https://princegeorge75.github.io/wdd231/final-project/index.html">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&family=Ysabeau+Infant:ital,wght@0,600;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" href="styles/desktop.css" media="screen and (min-width: 769px)">
+</head>
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="Kigo Golfing Club Logo" class="logo" loading="lazy">
+        <p>Kigo Country Golfing Club</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <img src="images/hero.png" alt="hero image" loading="lazy">
+            <h1>Welcome to Kigo Golfing Club</h1>
+            <p>Discover golfing at its finest in Kampala, Uganda.</p>
+        </section>
+        <section id="membership">
+            <h2>Our Membership Classes</h2>
+            <p>At the Kigo Golf Course Club, we value our esteemed customers and thus we have come up with three different classes to which
+                our interested community can buy and become members of our club;
+            </p>
+            <div class="membership-container">
+                <div class="membership-box">
+                    <h3>Gold Membership Package</h3>
+                    <img src="images/gold.jpg" alt="Gold Membership" loading="lazy">
+                    <p>
+                        The Gold Membership Package comes with the following benefits:
+                        <ul>
+                            <li>Absolute free entry to all events</li>
+                            <li>Dinner with the club president and board each month</li>
+                            <li>Free entrance to any desired tournament</li>
+                        </ul>
+                        The Gold membership costs $2500 per year
+                    </p>
+                </div>
+                <div class="membership-box">
+                    <h3>Silver Membership Package</h3>
+                    <img src="images/silver.jpg" alt="Silver Membership" loading="lazy">
+                    <p>The Silver Membership Package comes with the follwing benefits:
+                        <ul>
+                            <li>60% Discount on all entrance and registration fee to the club activities</li>
+                            <li>2 free entrances to tournaments per month</li>
+                            <li>A quartely spa and massage service at the Golf Course Hotel</li>
+                        </ul>
+                        The Silver membership costs $1800 per year
+                    </p>
+                </div>
+                <div class="membership-box">
+                    <h3>Bronze Membership Package</h3>
+                    <img src="images/bronze.jpg" alt="Bronze Membership" loading="lazy">
+                    <p>The Bronze membership package comes with the following benefits:
+                        <ul>
+                            <li>Free weekly golf trainings</li>
+                            <li>20% Discount on all club charges</li>
+                            <li>1 Free Tournament entry per month</li>
+                        </ul>
+                        The Bronze membership costs $1200 per year
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="member-container"></div>
+            <div id="member-modal" class="modal" style="display: none;"></div>
+
+        </section>
+        <p>For more information about our packages, please visit our contact page or fill the membership-contact box below and our custome rcare will reach out to you!</p>
+        <section id="membership-contact">
+            <div class="membership-contact-box" id="membership">
+                <h2>Membership</h2>
+                <p>Join our club and be part of the golfing community.</p>
+                <form action="submit.html" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Kigo Golfing Club. All rights reserved.</p>
+        |Prince George Ndiwalana|
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+    <!-- JavaScript -->
+    <script src="scripts/script.js" defer></script>
+</body>
+</html>
