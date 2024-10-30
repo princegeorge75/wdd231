@@ -18,7 +18,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Update the footer with the last modified date
     document.getElementById("lastModified").textContent = document.lastModified;
+    
+    // activate the hamburger button
 
+    const hamButton = document.querySelector("#hamburger");
+    const ul = document.querySelector("ul");
+    
+    hamButton.addEventListener("click", () => {
+        ul.classList.toggle("open-ul");
+        hamButton.classList.toggle("open");
+    });
 
     // Mobile Menu Toggle (for small screens)
     const navToggle = document.querySelector(".nav-toggle");
@@ -47,62 +56,45 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-// Fetch the member data from the JSON file
 async function fetchMembers() {
     try {
-        const response = await fetch("final-project/members.json"); // Replace with actual path
-        const members = await response.json();
-        displayMembers(members);
+        const response = await fetch('members.json'); // Fetch the local JSON file
+        const members = await response.json(); // Convert response to JSON
+
+        displayMembers(members); // Call function to display members
     } catch (error) {
-        console.error("Error loading members:", error);
+        console.error("Error fetching members:", error);
     }
 }
 
-// Display members on the page
 function displayMembers(members) {
-    const memberContainer = document.getElementById("member-container");
-    memberContainer.innerHTML = ""; // Clear any existing content
+    const container = document.getElementById('members-container');
+    container.innerHTML = ''; // Clear previous content
 
-    members.forEach((member, index) => {
-        // Create the HTML for each member card
-        const memberCard = document.createElement("div");
-        memberCard.classList.add("member-card");
-        memberCard.innerHTML = `
+    members.forEach(member => {
+        const card = document.createElement('div');
+        card.className = 'member-card';
+
+        // Create membership image source based on subscription
+        let membershipImage = '';
+        if (member.membership === 'Gold') {
+            membershipImage = 'images/gold.jpg'; // Path to gold image
+        } else if (member.membership === 'Silver') {
+            membershipImage = 'images/silver.jpg'; // Path to silver image
+        } else if (member.membership === 'Bronze') {
+            membershipImage = 'images/bronze.jpg'; // Path to bronze image
+        }
+
+        // Add content to the card
+        card.innerHTML = `
+            <img src="${membershipImage}" alt="${member.name} Membership">
             <h3>${member.name}</h3>
-            <p>Package: ${member.membership}</p>
-            <button onclick="showMemberModal(${index})">More Info</button>
+            <p>Membership: ${member.membership}</p>
         `;
 
-        memberContainer.appendChild(memberCard);
+        container.appendChild(card); // Add the card to the container
     });
-
-    // Save member data to localStorage
-    localStorage.setItem("members", JSON.stringify(members));
 }
 
-// Show modal dialog with detailed member information
-function showMemberModal(index) {
-    const members = JSON.parse(localStorage.getItem("members"));
-    const member = members[index];
-    const modal = document.getElementById("member-modal");
-
-    modal.innerHTML = `
-        <div class="modal-content">
-            <h2>${member.name}</h2>
-            <p>Package: ${member.membership}</p>
-            <p>Email: ${member.email}</p>
-            <p>Phone: ${member.phone}</p>
-            <button onclick="closeModal()">Close</button>
-        </div>
-    `;
-
-    modal.style.display = "block";
-}
-
-// Close the modal
-function closeModal() {
-    document.getElementById("member-modal").style.display = "none";
-}
-
-// Initialize the members list on page load
-document.addEventListener("DOMContentLoaded", fetchMembers);
+// Call the fetch function to load members on page load
+fetchMembers();

@@ -10,27 +10,63 @@ body {
 /* Header */
 header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    padding: 1rem;
+    padding: 10px;
     background-color: #004400;
+    justify-content: space-between;
 }
 
 header p {
     color: #fff;
 }
 
-header nav ul {
+header nav ul li {
     flex-direction: column;
     list-style: none;
-    padding: 0;
+    padding: 10px;
 }
 
 header nav ul li {
-    margin: 0.5rem 0;
+    margin: 5px;
 }
 
+ul {
+    display: none;
+    margin: 5px;
+    padding-top: 10px;
+    padding: 5px;
+}
 
+.open-ul {
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+    padding: 0;
+    justify-content: right;
+}
+
+li {
+    list-style: none;
+    padding: 5px;
+}
+
+/*Hamburger Menu */
+#hamburger::before{
+    content: "☰";
+}
+
+#hamburger.open::before {
+    content: "X";
+}
+
+#hamburger {
+    border: 2px solid #333;
+    background: #fff;
+    font-size: larger;
+    color: rgb(8, 8, 8);
+    justify-content: right;
+}
 
 /* Navigation Links */
 nav ul li a {
@@ -50,7 +86,7 @@ nav ul li a:hover {
 }
 
 .active-link {
-    color: #ff5733; /* Example color */
+    color: #ff5733; 
     font-weight: bold;
     border-bottom: 2px solid #ff5733;
   }
@@ -223,4 +259,30 @@ footer {
     padding: 1rem;
     background-color: #004400;
     color: #fff;
+}
+
+.members-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly; /* Align items evenly */
+    margin: 10px 0;
+    align-items: center;
+}
+
+.member-card {
+    width: calc(33.333% - 20px); /* Three cards in a row with some margin */
+    border: 1px solid #9f9f9f;
+    background-color: #075807;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    text-align: center; /* Center align text */
+}
+
+.member-card img {
+    max-width: 100%; /* Make sure the image fits the card */
+    height: auto;
+    border-radius: 70px;
 }

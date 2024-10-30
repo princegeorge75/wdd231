@@ -7,6 +7,10 @@ body {
     background-color: #b2d3b2;
 }
 
+#hamburger {
+    display: none;
+}
+
 /* Header */
 header {
     display: flex;
@@ -244,25 +248,27 @@ footer {
     color: #fff;
 }
 
-.member-card {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px;
+.members-container {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    justify-content: space-evenly; /* Align items evenly */
+    margin: 10px 0;
 }
 
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.modal-content {
-    background: #fff;
-    padding: 20px;
+.member-card {
+    width: calc(33.333% - 20px); /* Three cards in a row with some margin */
+    border: 1px solid #9f9f9f;
+    background-color: #075807;
     border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    text-align: center; /* Center align text */
 }
+
+.member-card img {
+    max-width: 100%; /* Make sure the image fits the card */
+    height: auto;
+    border-radius: 70px;
+}
+
